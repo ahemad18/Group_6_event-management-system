@@ -75,9 +75,23 @@ team-name_event-management-system/
 ```
 
 ## Development Timeline
-- **Version 1.0**: Initial setup with project structure and documentation
-- **Version 2.0**: Frontend implementation with basic UI
-- **Version 3.0**: Complete system with backend integration
+- **Version 1.0**: Initial setup with project structure and documentation ✓
+- **Version 2.0**: Frontend implementation with basic UI and functionality ✓
+- **Version 3.0**: Complete system with full features and comprehensive documentation ✓
+
+## Documentation
+- [User Guide](docs/user-guide.md) - Instructions for end users
+- [Developer Guide](docs/developer-guide.md) - Technical documentation for developers
+- [Project Charter](docs/project-charter.md) - Project overview and objectives
+- [Changelog](CHANGELOG.md) - Version history and updates
+
+## Project Status
+**Current Version**: 3.0 (Final Release)
+- ✅ Project structure established
+- ✅ Frontend implementation complete
+- ✅ Search and registration features working
+- ✅ Comprehensive documentation added
+- 🔄 Backend integration (planned for future phases)
 
 ## Contributing
 This is an academic project for Project Management course, Semester 3.
