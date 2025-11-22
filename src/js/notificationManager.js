@@ -2,7 +2,7 @@
 
 class NotificationManager {
     constructor() {
-        this.adminEmail = 'admin@eventmanagement.com';
+        this.adminEmail = 'ahemadashraf2004@gmail.com';
         this.notifications = [];
     }
 
