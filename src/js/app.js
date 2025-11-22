@@ -2,6 +2,7 @@
 
 let eventManager;
 let registrationForm;
+let notificationManager;
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Event Management System initialized');
@@ -9,11 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize Event Manager
     eventManager = new EventManager();
     
+    // Initialize Notification Manager
+    notificationManager = new NotificationManager();
+    
     // Initialize Registration Form
     registrationForm = new RegistrationForm();
     const formElement = document.getElementById('registration-form');
     if (formElement) {
-        registrationForm.init(formElement, eventManager);
+        registrationForm.init(formElement, eventManager, notificationManager);
     }
     
     // Load events

@@ -4,11 +4,13 @@ class RegistrationForm {
     constructor() {
         this.form = null;
         this.eventManager = null;
+        this.notificationManager = null;
     }
 
-    init(formElement, eventManager) {
+    init(formElement, eventManager, notificationManager) {
         this.form = formElement;
         this.eventManager = eventManager;
+        this.notificationManager = notificationManager;
         this.attachEventListeners();
     }
 
@@ -75,7 +77,13 @@ class RegistrationForm {
         );
 
         if (result.success) {
-            this.showSuccess(result.message);
+            // Get event details for notification
+            const eventDetails = this.eventManager.getEventById(parseInt(formData.event));
+            
+            // Send admin notification
+            this.notificationManager.sendRegistrationNotification(eventDetails, formData);
+            
+            this.showSuccess(result.message + ' Admin has been notified!');
             this.form.reset();
         } else {
             this.showErrors([result.message]);
