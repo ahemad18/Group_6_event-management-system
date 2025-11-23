@@ -3,8 +3,8 @@
 ## Project Overview
 The Event Management System is a comprehensive solution designed to streamline the planning, organization, and execution of events. This system helps event organizers manage attendees, venues, schedules, and resources efficiently.
 
-**Version**: 1.0.0-initial  
-**Status**: Initial Setup Phase
+**Version**: 1.0.0-progress  
+**Status**: Development in Progress
 
 ## Purpose
 - Simplify event planning and coordination
